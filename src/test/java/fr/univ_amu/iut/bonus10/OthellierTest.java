@@ -139,8 +139,10 @@ class OthellierTest {
   // ---------------------------------------------------------------------
   // Couverture du moteur de retournement (capture).
   //
-  // L'idée : on installe à la main une configuration de plateau (via Case.setPossesseur,
-  // package-private), on remet les scores à des valeurs cohérentes, puis on déclenche un coup
+  // L'idée : on installe à la main une configuration de plateau (via
+  // Case.setPossesseur,
+  // package-private), on remet les scores à des valeurs cohérentes, puis on
+  // déclenche un coup
   // dont on connaît à l'avance les retournements attendus.
   // ---------------------------------------------------------------------
 
@@ -181,7 +183,8 @@ class OthellierTest {
     surFxThread(
         () -> {
           Joueur[][] config = new Joueur[Othellier.TAILLE][Othellier.TAILLE];
-          // Rangée 4 : NOIR BLANC BLANC BLANC NOIR _ _ _   sauf que (4,0) sera placée par le clic
+          // Rangée 4 : NOIR BLANC BLANC BLANC NOIR _ _ _ sauf que (4,0) sera placée par
+          // le clic
           // Donc on installe ici : _ BLANC BLANC BLANC NOIR _ _ _
           config[4][1] = Joueur.BLANC;
           config[4][2] = Joueur.BLANC;
@@ -310,7 +313,8 @@ class OthellierTest {
     surFxThread(
         () -> {
           Joueur[][] config = new Joueur[Othellier.TAILLE][Othellier.TAILLE];
-          // (5,5) sera tentée par le clic ; vers le bas : BLANC en (6,6) puis (7,7) BLANC,
+          // (5,5) sera tentée par le clic ; vers le bas : BLANC en (6,6) puis (7,7)
+          // BLANC,
           // et plus rien après (bord).
           config[6][6] = Joueur.BLANC;
           config[7][7] = Joueur.BLANC;
