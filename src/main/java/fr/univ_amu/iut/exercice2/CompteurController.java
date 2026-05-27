@@ -17,26 +17,21 @@ public class CompteurController {
 
   @FXML
   private void initialize() {
-    // Lier le texte du label à la valeur du compteur (unidirectionnel).
-    // Dès que compteur change, labelCompteur affiche la nouvelle valeur.
     labelCompteur.textProperty().bind(compteur.asString());
   }
 
   @FXML
   private void incrementer() {
-    // Incrémente la valeur de la propriété compteur.
     compteur.set(compteur.get() + 1);
   }
 
   @FXML
   private void decrementer() {
-    // Décrémente la valeur de la propriété compteur.
     compteur.set(compteur.get() - 1);
   }
 
   @FXML
   private void reinitialiser() {
-    // Remet la propriété compteur à 0.
     compteur.set(0);
   }
 

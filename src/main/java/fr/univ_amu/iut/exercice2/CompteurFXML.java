@@ -6,17 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- * Exercice 2 : un compteur avec FXML + contrôleur.
- *
- * <p>Différence vs exercice 1 :
- *
- * <ul>
- *   <li>Le FXML déclare un {@code fx:controller} pointant sur {@link CompteurController}
- *   <li>Les boutons déclenchent des méthodes du contrôleur via {@code onAction="#..."}
- *   <li>La valeur affichée est liée au modèle par un binding
- * </ul>
- */
 public class CompteurFXML extends Application {
 
   public static void main(String[] args) {
